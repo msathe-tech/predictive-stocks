@@ -21,7 +21,7 @@ public class AcmeController {
         return String.format("Today's top stock: PVTL");
     }
 
-    @GetMapping("/kill-instance")
+    @GetMapping("/kill-ai")
     public void die()
     {
         log.error("Bye bye AI, RIP!");
