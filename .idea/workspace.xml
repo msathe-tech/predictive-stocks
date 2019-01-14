@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c73f639f-a0bc-4213-b6c2-c2eaa5c2d557" name="Default Changelist" comment="" />
+    <list default="true" id="c73f639f-a0bc-4213-b6c2-c2eaa5c2d557" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pks/acme-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pks/acme-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pks/acme-stocks-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pks/d-acme.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pks/demo-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pks/script.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pks/trypod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pks/tryservice.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/acme/predictivestocks/AcmeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/acme/predictivestocks/AcmeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/acme/predictivestocks/PredictiveStocksApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/acme/predictivestocks/PredictiveStocksApplication.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,6 +39,7 @@
           <entry key="java" value="2" />
           <entry key="js" value="1" />
           <entry key="properties" value="1" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -33,6 +48,7 @@
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="2" />
           <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
@@ -54,16 +70,25 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/acme/predictivestocks/PredictiveStocksApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+        <entry file="file://$PROJECT_DIR$/pks/script.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="361">
+              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -77,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="71">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -86,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/acme/predictivestocks/AcmeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
@@ -151,61 +176,17 @@
             <path>
               <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
               <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
               <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="pks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
               <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="predictivestocks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,12 +203,13 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547487572436" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547490410585" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
   </component>
@@ -297,12 +279,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547484526448</updated>
-      <workItem from="1547484531513" duration="1080000" />
+      <workItem from="1547484531513" duration="2493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1080000" />
+    <option name="totallyTimeSpent" value="2493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="6" />
@@ -352,7 +334,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/acme/predictivestocks/AcmeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
@@ -363,7 +345,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/acme/predictivestocks/PredictiveStocksApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -376,14 +358,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="152">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pks/script.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>

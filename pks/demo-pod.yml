@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: fortune-service-2
+    deployment: pks-workshop-2
+  name: fortune-service-2
+spec:
+  ports:
+  - port: 80
+    name: ui-2
+  type: LoadBalancer
+  selector:
+    app: fortune-2
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: fortune-2
+    deployment: pks-workshop-2
+  name: fortune-2
+spec:
+  containers:
+  - image: azwickey/fortune-ui:latest
+    name: fortune-ui-2
+    ports:
+    - containerPort: 80
+      protocol: TCP

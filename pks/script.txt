@@ -1,0 +1,42 @@
+1. Create LB
+  1a. Frontend - port map for 8443
+2. Create DNS entry with the IP address of the LB
+  2a. DNS name - acme.houston.cf-app.com
+3. Create cluster
+pks create-cluster acme-cluster -e acme.houston.cf-app.com -n 1 -p small
+watch pks cluster acme-cluster
+4. Create pod.yml
+5. Create service.yml
+6. Update LB once the acme-cluster is successfully created
+  6a. Backend - Map to Master VM
+7. Use K8s cluster
+pks get-credentials acme-cluster
+kubectl cluster-info
+kubectl get nodes -o wide
+6. Create k8s deployment
+kubectl create -f acme-pod.yml -f acme-service
+watch kubectl get services -l deployment=acme-predictive-stocks --show-labels
+7. Access the acme portal using <external IP>:8080
+8. Optional configure DNS name for the <external IP>
+----
+Helm
+Good references -
+https://medium.com/@elijudah/configuring-minimal-rbac-permissions-for-helm-and-tiller-e7d792511d10
+https://medium.com/@pczarkowski/easily-install-uninstall-helm-on-rbac-kubernetes-8c3c0e22d0d7
+https://docs.bitnami.com/kubernetes/how-to/create-your-first-helm-chart/
+----
+
+9. Follow instructions to setup tiller - https://docs.pivotal.io/runtimes/pks/1-2/configure-tiller-helm.html
+   9a. kubectl create -f rbac-config.yml
+   9b. helm init --service-account tiller
+10. create folder helm, cd helm
+11. helm create acme; cd acme
+12. Edit values.yaml
+   12a. add containerPort: 8080
+   12b. change "image:" parameters to set for your image location
+   12c. change the service:type: to LoadBalancer
+13. Edit deployment.yaml
+   13a. change containerPort: to {{ .Values.containerPort }}
+14. Check if the YAMLs are well formatted
+   14a. cd ..; helm lint ./acme
+15. helm install --name acme-stocks ./acme

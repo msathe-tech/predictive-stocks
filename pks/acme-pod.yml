@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: acme-portal
+    deployment: acme-predictive-stocks
+  name: acme-portal
+spec:
+  containers:
+  - image: msathepivotal/myfirst-boot-on-docker:latest
+    name: acme-frontend
+    ports:
+    - containerPort: 8080
+      protocol: TCP
