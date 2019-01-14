@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c73f639f-a0bc-4213-b6c2-c2eaa5c2d557" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pks/acme-pod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pks/acme-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pks/acme-stocks-pod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pks/d-acme.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pks/demo-pod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pks/script.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pks/trypod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pks/tryservice.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/acme/predictivestocks/AcmeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/acme/predictivestocks/AcmeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/acme/predictivestocks/PredictiveStocksApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/acme/predictivestocks/PredictiveStocksApplication.class" afterDir="false" />
-    </list>
+    <list default="true" id="c73f639f-a0bc-4213-b6c2-c2eaa5c2d557" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,6 +25,7 @@
           <entry key="java" value="2" />
           <entry key="js" value="1" />
           <entry key="properties" value="1" />
+          <entry key="sh" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -48,7 +35,7 @@
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="2" />
           <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
@@ -84,13 +71,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pks/script.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="171">
+              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build-deploy-docker.sh">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -173,21 +165,6 @@
               <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
               <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="pks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="predictive-stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="predictive-stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -203,7 +180,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547490410585" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547493736795" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -279,16 +256,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547484526448</updated>
-      <workItem from="1547484531513" duration="2493000" />
+      <workItem from="1547484531513" duration="3636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2493000" />
+    <option name="totallyTimeSpent" value="3636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -371,10 +347,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pks/script.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="171">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build-deploy-docker.sh">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
