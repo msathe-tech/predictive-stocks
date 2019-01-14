@@ -1,0 +1,14 @@
+#welcome {
+    color: darkblue;
+}
+
+#hello {
+    font-weight: bold;
+    font-size: 3ch;
+}
+
+#stock {
+    font-weight: bold;
+    font-size: 4ch;
+    color: darkcyan;
+}
