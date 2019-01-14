@@ -24,7 +24,7 @@ public class AcmeController {
     @GetMapping("/kill-instance")
     public void die()
     {
-        log.error("Bye bye app-instance, RIP!");
+        log.error("Bye bye AI, RIP!");
         System.exit(-1);
     }
 }
