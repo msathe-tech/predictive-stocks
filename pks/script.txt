@@ -16,7 +16,7 @@ kubectl get nodes -o wide
 6. Create k8s deployment
 kubectl create -f acme-pod.yml -f acme-service
 watch kubectl get services -l deployment=acme-predictive-stocks --show-labels
-7. Access the acme portal using <external IP>:8080
+7. Access the acme portal using <external IP>:8080 
 8. Optional configure DNS name for the <external IP>
 ----
 Helm
