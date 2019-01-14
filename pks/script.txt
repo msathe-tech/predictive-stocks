@@ -20,10 +20,6 @@ watch kubectl get services -l deployment=acme-predictive-stocks --show-labels
 8. Optional configure DNS name for the <external IP>
 ----
 Helm
-Good references -
-https://medium.com/@elijudah/configuring-minimal-rbac-permissions-for-helm-and-tiller-e7d792511d10
-https://medium.com/@pczarkowski/easily-install-uninstall-helm-on-rbac-kubernetes-8c3c0e22d0d7
-https://docs.bitnami.com/kubernetes/how-to/create-your-first-helm-chart/
 ----
 
 9. Follow instructions to setup tiller - https://docs.pivotal.io/runtimes/pks/1-2/configure-tiller-helm.html
