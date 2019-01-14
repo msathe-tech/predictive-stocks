@@ -24,7 +24,7 @@ public class AcmeController {
     @GetMapping("/kill-ai")
     public void die()
     {
-        log.error("Bye bye AI, RIP!");
+        log.error("Bye bye AI, RIP!!");
         System.exit(-1);
     }
 }
